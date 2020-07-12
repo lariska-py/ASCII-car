@@ -17,8 +17,8 @@ def car(b, s):
 def clear():
 	x = system('clear')
 	return x
-speed = 1
+speed = 3
 distance = 100 # kilometros rodados
 for i in range(distance):
-  car(i, speed)
+  car(i, 1/speed)
   distance -= 1

@@ -16,8 +16,7 @@ def car(b, s):
 	clear()
 
 def clear():
-	x = system('clear')
-	return x
+	return system('clear')
 
 try:
   speed = int(argv[1])

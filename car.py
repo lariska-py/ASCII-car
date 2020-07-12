@@ -1,5 +1,6 @@
 from time import sleep
 from os import system
+from sys import argv
 
 def car(b, s):
 	line1 = "       .--------."
@@ -15,10 +16,15 @@ def car(b, s):
 	clear()
 
 def clear():
-	x = system('cls')
-	return x
-speed = 1
-distance = 100 # kilometros rodados
+	return system('clear')
+
+try:
+  speed = int(argv[1])
+  distance =  int(argv[2]) # kilometros rodados
+except:
+  speed = 3
+  distance =  10 # kilometros rodados
+
 for i in range(distance):
-  car(i, speed)
+  car(i, 1/speed)
   distance -= 1
